@@ -52,7 +52,7 @@ def main():
         user_input = input('Введите команду: ')
         if user_input == 'p':
             document_owner = name_by_number(documents)
-            if document_owner == None:
+            if document_owner is None:
                 print('Документа с таким номером нет в списке!\n'
                       'Если вы хотите добавить документ введите команду "a"')
             else:
@@ -61,7 +61,7 @@ def main():
             list_documents(documents)
         elif user_input == 's':
             shelf_number = shelf_by_number(directories)
-            if shelf_number == None:
+            if shelf_number is None:
                 print('Документа с таким номером нет в списке!\n'
                       'Если вы хотите добавить документ введите команду "a"')
             else:
